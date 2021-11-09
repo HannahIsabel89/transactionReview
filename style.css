@@ -29,10 +29,6 @@ h1 {
   border-radius: 5%;
 }
 
-.vid:hover {
-  ;
-}
-
 .btn {
     background-color: rgba(red, green, blue, alpha);
     box-shadow: rgba(13, 88, 31, 0.2) 0 1px 0 inset;
@@ -43,10 +39,20 @@ h1 {
     padding: 10%;
 }
 
+.transaction-card {
+  columns: 2;
+  display: inline-grid;
+  margin: 20px
+}
+
+img.transactionCardImg {
+  border-radius: 10%;
+}
+
 /* modal */
-/* The Modal (background) */
+/* The Video Modal (background) */
 .modal {
-    display: none;  /*Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -57,6 +63,19 @@ h1 {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
+
+#quizModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
   
   /* Modal Content/Box */
   .modal-content {
@@ -71,7 +90,7 @@ h1 {
   }
   
   /* The Close Button */
-  .close {
+  #close1#close2 {
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -89,3 +108,55 @@ h1 {
     from{opacity: 0}
     to {opacity: 1}
   }
+
+  /* The video modal*/
+  .choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 00.1rem solid rgb (86, 165, 235, 0.25);
+    background-color: white;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translate(-0.1rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #56a5eb;
+    color: white;
+}
+
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.correct {
+    background-color: #28a745;
+}
+
+.incorrect {
+    background-color: #dc3545;
+}
+
+/* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between; /* puts available space between */
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}

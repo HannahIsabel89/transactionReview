@@ -13,27 +13,64 @@
         <h1>Review the main Accounting Transactions</h1>
         <p>Click on each transaction to watch a video and answer some questions.</p>
         <div class="buttons row">
-            <div class="transactions">
-                <img src="" alt="Cash Sales" id="CashSale" class="vid">
-                <img src="" alt="Credit Sales" id="CreditSale" class="vid">
-                <img src="" alt="Cash Purchase" id="CashPurchase" class="vid">
-                <img src="" alt="Credit Purchase" id="CreditPurchase" class="vid">
-                <img src="" alt="Sales Return" id="SalesReturn" class="vid">
-                <img src="" alt="Purchase Return" id="PurchaseReturn" class="vid">
-            </div>
+            <div class="transaction-list"></div>
         </div>
           
         </div>
-<!-- The Modal -->
+<!-- The Video Modal -->
 <div id="myModal" class="modal">
-
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <span id="close1">&times;</span>
     <iframe width="420" height="315" src="" id="iframe"></iframe>
   </div>
-
 </div>
-    
+   <!-- The Quiz --> 
+    <button id="quizBtn">Quiz</button>
+<!-- The Quiz Modal -->
+<div id="quizModal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span id="close2">&times;</span>
+      <div class="container">
+        <div id="game" class = "justify-center flex-column">
+            <div id="hud">
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Question
+                    </p>
+                    <h1 class="hud-main-text" id="questionCounter">
+                    </h1>
+                </div>
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h2 id="question">What is the answer to this question?</h2>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1">Choice 1</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4">Choice 4</p>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
 </body>
 </html>

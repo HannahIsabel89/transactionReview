@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Cash Sales are between the business and:",
+    "choice1": "Bank",
+    "choice2": "Supplier",
+    "choice3": "Government",
+    "choice4": "Customer",
+    "answer": 4
+  },
+  {
+    "question": "Purchase returns involve an ______ of inventory and a ______ in the amount owing the supplier.",
+    "choice1": "increase, increase",
+    "choice2": "increase, decrease",
+    "choice3": "decrease, decrease",
+    "choice4": "decrease, increase",
+    "answer": 3
+  },
+  {
+    "question": "Which of the following is not a reason for a Sales Return.",
+    "choice1": "Wrong colour",
+    "choice2": "Wrong size",
+    "choice3": "Item wasn't delivered",
+    "choice4": "Item was damaged",
+    "answer": 1
+  },
+  {
+    "question": "A Credit Sale will ______ the GST ledger account.",
+    "choice1": "Debit",
+    "choice2": "Credit",
+    "choice3": "Debit and credit",
+    "choice4": "Neither",
+    "answer": 2
+  },
+  {
+    "question": "A Cash Purchase of inventory will ______ the inventory ledger, ______ the bank ledger and ______ the GST ledger.",
+    "choice1": "Debit, Debit, Credit",
+    "choice2": "Debit, Credit, Debit",
+    "choice3": "Debit, Credit, Credit",
+    "choice4": "Credit, Debit, Debit",
+    "answer": 2
+  },
+  {
+    "question": "Credit Purchase involves:",
+    "choice1": "Recieving inventory today and paying at a later arranged date.",
+    "choice2": "Pre-paying for inventory received in the future.",
+    "choice3": "Paying for inventory purchased last month.",
+    "choice4": "Selling inventory to a customer.",
+    "answer": 2
+  },
+  {
+    "question": "GST collected is:",
+    "choice1": "owed to the bank.",
+    "choice2": "owing from the bank.",
+    "choice3": "owed to the ATO.",
+    "choice4": "owing from the ATO",
+    "answer": 3
+  },
+  {
+    "question": "ATO stands for:",
+    "choice1": "Authentic Tax Office",
+    "choice2": "Actual Tax Official",
+    "choice3": "Australian Telephone Office",
+    "choice4": "Australian Tax Office",
+    "answer": 4
+  },
+  {
+    "question": "If the business damages an item of inventory they should:",
+    "choice1": "Try to sell the item to a customer who doesn't know about the damage.",
+    "choice2": "Try to sell the item at a discount, inform the customer of the damage.",
+    "choice3": "Send it back to the supplier and say it was broken when it arrived.",
+    "choice4": "Throw the item in the bin.",
+    "answer": 2
+  },
+  {
+    "question": "Purchase Returns are between the business and:",
+    "choice1": "Bank",
+    "choice2": "Supplier",
+    "choice3": "Government",
+    "choice4": "Customer",
+    "answer": 2
+  }
+]
