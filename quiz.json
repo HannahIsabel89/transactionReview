@@ -21,7 +21,7 @@
     "choice2": "Wrong size",
     "choice3": "Item wasn't delivered",
     "choice4": "Item was damaged",
-    "answer": 1
+    "answer": 3
   },
   {
     "question": "A Credit Sale will ______ the GST ledger account.",
