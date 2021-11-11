@@ -19,11 +19,12 @@ h1 {
 
 .transaction-list {
   display: inline-block;
-  margin: 20px
+  margin: 30px
 }
 
 img {
   border-radius: 5%;
+  width: 350px;
 }
 
 .responsive-iframe {
@@ -34,7 +35,6 @@ img {
   right: 0;
   width: 100%;
   height: 100%;
-}
 }
 
 .btn {
