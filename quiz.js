@@ -7,7 +7,7 @@ const scoreText = document.getElementById('score');
 
 const quizModal = document.getElementById('quizModal'),
 //quizBtn = document.getElementById('quizBtn'),
-close2 = document.getElementById('close2');
+closeBtn = document.getElementById('closeBtn');
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -44,9 +44,14 @@ let startGame = () => {
 
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-    localStorage.setItem('mostRecentScore', score);
+    if (score > 0  && score < 50) {
+      quizModal.innerHTML = `<h1 class=sadGrade>${score}%</h1>`;
+    } 
+    if (score >= 50 && score <= 100) {
+      quizModal.innerHTML = `<h1 class=goodGrade>${score}%</h1>`
+    };
+    setTimeout(function(){closeModal()}, 5000);
   }
-
     questionCounter++; // increase counter by one
     questionCounterText.innerText =  `${questionCounter}/${MAX_QUESTIONS}`;
     
@@ -93,4 +98,10 @@ incrementScore = num => {
   score +=num;
   scoreText.innerText = score;
 }
-
+function closeModal () {
+  quizModal.style.display = "none";
+}
+// closing the quiz modal
+closeBtn.addEventListener('click', event => {
+  closeModal();
+})

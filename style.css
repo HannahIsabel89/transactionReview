@@ -1,16 +1,20 @@
-*
-
 body {
     margin: 30px;
     box-sizing: border-box;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: bisque;
+    background-image: url(./images/colourful.jpg);
+    background-size: cover;
 }
 
 h1 {
-    margin: 15px;
+  background-color: white;
+  border-radius: 10%;
+  width: fit-content;
+  text-align: center;
+  letter-spacing: 5px;
+  margin: auto;
 }
 
 .transaction-list {
@@ -53,8 +57,7 @@ img {
   width: 50%;
   height: 50%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+
 }
 
 .hidden {
@@ -70,21 +73,19 @@ button#quizBtn {
   display: none;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  top: 10px;
+  top: 30px;
   left: 15%;
   width: 70%;
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
 }
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
-    margin: 50px auto; /* 15% from the top and centered */
+    background-color: #85b9e3;
+    margin: auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 50px 0 rgba(0, 0, 0, 0.17);
     animation-name: modalopen;
     animation-duration: 1s;
@@ -95,7 +96,7 @@ button#quizBtn {
     to {opacity: 1}
   }
 
-  /* The video modal*/
+  /* The quiz answer boxes*/
   .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
@@ -145,4 +146,32 @@ button#quizBtn {
 
 .hud-main-text {
     text-align: center;
+}
+
+.sadGrade {
+  background: url(./images/tryAgain.jpg);
+  background-size: cover;
+  padding: 150px;
+  border-radius: 5%;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.goodGrade {
+  background: url(./images/wellDone.jpg);
+  background-size: cover;
+  padding: 150px;
+  border-radius: 5%;
+  width: 20%;
+  margin: 0 auto;
+}
+
+h1.sadGrade {
+  color: rgb(240, 8, 8);
+  font-size: 50px;
+}
+
+h1.goodGrade {
+  color: white;
+  font-size: 100px;
 }

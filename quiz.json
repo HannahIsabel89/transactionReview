@@ -45,7 +45,7 @@
     "choice2": "Pre-paying for inventory received in the future.",
     "choice3": "Paying for inventory purchased last month.",
     "choice4": "Selling inventory to a customer.",
-    "answer": 2
+    "answer": 1
   },
   {
     "question": "GST collected is:",
