@@ -41,9 +41,11 @@ const generateCard = async (data) => {
     const card = document.createElement('div');
     card.className = 'transaction-list'
     card.dataset['name'] = data.snippet.title
+    const title = data.snippet.title
+    const editedTitle = title.replace(/([A-Z])/g, ' $1').trim()
 
     card.innerHTML = `
-    <h3 class ='transaction-list_h3'>${data.snippet.title}</h3>
+    <h3 class ='transaction-list_h3'>${editedTitle}</h3>
     <img class ='transaction-list_img' data-name="${data.snippet.title}" src="${data.snippet.thumbnails.high.url}" alt="${data.snippet.title}" />
     `
     return card

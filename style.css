@@ -6,6 +6,8 @@ body {
     line-height: 1.6;
     background-image: url(./images/colourful.jpg);
     background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h1 {
