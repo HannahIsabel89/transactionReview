@@ -12,11 +12,16 @@ body {
 
 h1 {
   background-color: white;
-  border-radius: 10%;
+  border-radius: 15%;
   width: fit-content;
   text-align: center;
   letter-spacing: 5px;
   margin: auto;
+  font-size: 45px;
+}
+
+p {
+  font-size: 30px;
 }
 
 .transaction-list {
@@ -88,9 +93,9 @@ button#quizBtn {
     margin: auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 50px 0 rgba(0, 0, 0, 0.17);
     animation-name: modalopen;
     animation-duration: 1s;
+    border-radius: 5%;
   }
   
   @keyframes modalopen {
@@ -103,8 +108,6 @@ button#quizBtn {
     display: flex;
     margin-bottom: 0.5rem;
     width: 100%;
-    font-size: 1.3rem;
-    border: 00.1rem solid rgb (86, 165, 235, 0.25);
     background-color: white;
 }
 
@@ -121,9 +124,14 @@ button#quizBtn {
     color: white;
 }
 
+p.choice-prefix {
+  font-size: 20px;
+}
+
 .choice-text {
-    padding: 1.5rem;
+    padding: 1rem;
     width: 100%;
+    font-size: 25px;
 }
 
 .correct {
@@ -134,22 +142,14 @@ button#quizBtn {
     background-color: #dc3545;
 }
 
-/* HUD */
+/* top of the quiz page - question number and score */
 
-#hud {
+#quizInfo {
     display: flex;
     justify-content: space-between; /* puts available space between */
 }
 
-.hud-item {
-    text-align: center;
-    font-size: 1.6rem;
-}
-
-.hud-main-text {
-    text-align: center;
-}
-
+/* final score css */
 .sadGrade {
   background: url(./images/tryAgain.jpg);
   background-size: cover;
