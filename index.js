@@ -31,6 +31,7 @@ async function findSomething(topic, arr) {
         return item.snippet.title === topic
     });
     youTubeVideos[topic] = video
+    console.log(video)
     return video
 }
 
